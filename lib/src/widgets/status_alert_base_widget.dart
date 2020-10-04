@@ -226,10 +226,7 @@ class __TDBaseWidgetState extends State<StatusAlertBaseWidget>
           aspectRatio: 1.0,
           child: Container(
             decoration: BoxDecoration(
-              color: widget.backgroundColor ??
-                      Theme.of(context).brightness == Brightness.dark
-                  ? darkBackground
-                  : lightBackground,
+              color: widget.backgroundColor,
               borderRadius: widget.borderRadius,
             ),
             child: Padding(
